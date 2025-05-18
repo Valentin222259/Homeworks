@@ -1,114 +1,242 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset = "UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title> Grid </title> 
-        <meta name="description" content = "" />
-        <meta name = "viewport" content = "width = device-width, initial-scale = 1" /> 
-        <link rel = "stylesheet" href = "./Tema3.css" />
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Grid</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1" />
+    <link rel="stylesheet" href="./Tema3.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-
-<body>
-   <div class = "container-area">
-            <div class = "item item-16">
-                <div class = "header-container">
-                   <img src = "Photos/logo.png" class = "logo-look"
-                   alt = "logo"/>
-                   <div class = "header-container">
-                      <input type="text" placeholder="Caută știri..." />
-                   </div>
-                   <div class = "bottons">
-                      <button>
-                          <img src = "Photos/login.png" class = "bottons-look"/>
-                      </button>
-                      <button>
-                          <img src = "Photos/register.png" class = "bottons-look"/>
-                      </button>
-                   </div>
-                </div>
-            </div>
-
-            <div class = "item item-17">
-                <div class="extra-links">
-                   <h4>Linkuri utile</h4>
-                      <ul>
-                        <li><a href="#">Starea traficului</a></li>
-                        <li><a href="#">Calendar sărbători</a></li>
-                        <li><a href="#">Hărți meteo</a></li>
-                        <li><a href="#">Statistici</a></li>
-                        <li><a href="#">Servicii publice</a></li>
-                        <li><a href="#">Știri locale</a></li>
-                        <li><a href="#">Programe TV</a></li>
-                        <li><a href="#">Anunțuri</a></li>
-                      </ul>
-                </div>
-            </div>
-            
-            <div class = "item item-18">
-                <div class="main-card">
-                  <h4>Cutremur în România</h4>
-                  <p>Seism de 4.3 pe scara Richter detectat în zona Vrancea.</p>
-
-                  <h4>Legea Educației</h4>
-                  <p>Parlamentul a adoptat noua lege privind sistemul de învățământ.</p>
-
-                  <h4>Sport</h4>
-                  <p>Naționala României joacă diseară în semifinala Campionatului European.</p>
-
-                  <h4>Tehnologie</h4>
-                  <p>Apple a lansat un nou model de iPhone cu funcționalități AI avansate.</p>
-
-                  <h4>Politică</h4>
-                  <p>Președintele a anunțat reforme în administrația publică.</p>
-
-                  <h4>Economie</h4>
-                  <p>Inflația scade pentru a treia lună consecutiv, anunță BNR.</p>
-
-                  <h4>Mediu</h4>
-                  <p>Pădurile din nordul țării vor fi incluse într-un nou program de conservare.</p>
-
-                 <h4>Transport</h4>
-                 <p>Metroul din Cluj-Napoca ar putea fi finalizat până în 2030.</p>
-
-                 <h4>Internațional</h4>
-                 <p>Summit NATO programat pentru luna iunie în Berlin.</p>
-
-                 <h4>Educație</h4>
-                 <p>Bacalaureatul 2025 ar putea include o nouă probă practică.</p>
-               </div>
-            </div>
-
-            <div class = "item item-19 right-container">
-                <div class="right-widget">
-                  <h4>Vremea azi</h4>
-                  <p>Timișoara: 18°C, soare</p>
-                  <p>București: 20°C, nori</p>
-                </div>
-
-                <div class="right-widget">
-                  <h4>Curs valutar</h4>
-                     <ul>
-                        <li>EUR: 4.97</li>
-                        <li>USD: 4.58</li>
-                        <li>BTC: 27200 €</li>
-                    </ul>
-                </div>
-
-                <div class="right-widget">
-                  <h4> Evenimente azi</h4>
-                    <ul>
-                      <li>10:00 Conferință educațională, Timișoara</li>
-                      <li>14:00 Lansare de carte, București</li>
-                      <li>19:00 Concert simfonic, Cluj-Napoca</li>
-                    </ul>
-                </div>
-            </div>
-            <div class = "item item-20">
-                 <p class="footer-text">© 2025 My Website. All rights reserved.</p>
-            </div>
+  <body>
+    <nav class="nav item itemPrim">
+  <input type="checkbox" id="menu-collapse" hidden />
+  <div class="header-container nav-bar-wrapper">
+    <img src="Photos/logo.png" class="logo-look" alt="logo" />
+    
+    <div class="header-container">
+      <input type="text" placeholder="Caută știri..." />
     </div>
-    <div></div>
-</body>
+    
+    <!-- Butoane care se vor ascunde la ecran mic -->
+    <div class="bottons action-buttons-wrapper nav-bar-buttons-container">
+      <button>
+        <img src="Photos/login.png" class="bottons-look" />
+      </button>
+      <button>
+        <img src="Photos/register.png" class="bottons-look" />
+      </button>
+    </div>
+
+    <!-- Iconița de meniu apare DOAR sub 950px -->
+    <div class="menu-icon">
+      <label for="menu-collapse">
+        <img id="menu-icon" src="Photos/menu.png" />
+      </label>
+    </div>
+  </div>
+</nav>
+
+<br/>
+    <section class="container-area">
+      <div class="item item-17">
+        <div class="extra-links">
+          <h4>Linkuri utile</h4>
+          <ul>
+            <li><a href="#">Starea traficului</a></li>
+            <li><a href="#">Calendar sărbători</a></li>
+            <li><a href="#">Hărți meteo</a></li>
+            <li><a href="#">Statistici</a></li>
+            <li><a href="#">Servicii publice</a></li>
+            <li><a href="#">Știri locale</a></li>
+            <li><a href="#">Programe TV</a></li>
+            <li><a href="#">Anunțuri</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item item-18">
+        <div class="main-card">
+          <h4>Cutremur în România</h4>
+          <p>Seism de 4.3 pe scara Richter detectat în zona Vrancea.</p>
+
+          <h4>Legea Educației</h4>
+          <p>Parlamentul a adoptat noua lege privind sistemul de învățământ.</p>
+
+          <h4>Sport</h4>
+          <p>
+            Naționala României joacă diseară în semifinala Campionatului
+            European.
+          </p>
+
+          <h4>Tehnologie</h4>
+          <p>
+            Apple a lansat un nou model de iPhone cu funcționalități AI
+            avansate.
+          </p>
+
+          <h4>Politică</h4>
+          <p>Președintele a anunțat reforme în administrația publică.</p>
+
+          <h4>Economie</h4>
+          <p>Inflația scade pentru a treia lună consecutiv, anunță BNR.</p>
+
+          <h4>Mediu</h4>
+          <p>
+            Pădurile din nordul țării vor fi incluse într-un nou program de
+            conservare.
+          </p>
+
+          <h4>Transport</h4>
+          <p>Metroul din Cluj-Napoca ar putea fi finalizat până în 2030.</p>
+
+          <h4>Internațional</h4>
+          <p>Summit NATO programat pentru luna iunie în Berlin.</p>
+
+          <h4>Educație</h4>
+          <p>Bacalaureatul 2025 ar putea include o nouă probă practică.</p>
+        </div>
+      </div>
+
+      <div class="item item-19 right-container">
+        <div class="right-widget">
+          <h4>Vremea azi</h4>
+          <p>Timișoara: 18°C, soare</p>
+          <p>București: 20°C, nori</p>
+        </div>
+
+        <div class="right-widget">
+          <h4>Curs valutar</h4>
+          <ul>
+            <li>EUR: 4.97</li>
+            <li>USD: 4.58</li>
+            <li>BTC: 27200 €</li>
+          </ul>
+        </div>
+
+        <div class="right-widget">
+          <h4>Evenimente azi</h4>
+          <ul>
+            <li>10:00 Conferință educațională, Timișoara</li>
+            <li>14:00 Lansare de carte, București</li>
+            <li>19:00 Concert simfonic, Cluj-Napoca</li>
+          </ul>
+        </div>
+        
+        <div class="right-widget">
+  <h4>Știrea zilei</h4>
+  <ul>
+    <li>NASA a descoperit o nouă exoplanetă care ar putea susține viața.</li>
+    <li>Descoperirea a fost făcută cu telescopul James Webb.</li>
+  </ul>
+</div>
+
+      </div>
+    </section>
+    <br /><br />
+
+    <section class="second_section">
+      <div>
+        <h2 id = "top-look">PRICING</h2>
+      </div>
+      <div>
+        <h1 class="title-look">Let’s get some real work done here.</h1>
+      </div>
+      <div>
+        <p class="title-look-bis">
+          Product is your perfect solution for working. Get started now for free
+        </p>
+      </div>
+
+      <div class="cards" style="gap: 100px">
+        <div class="single-card little-card">
+          <h2 class="free-look">Free</h2>
+          <p class = "forma">Brief price description</p>
+          <div class="dollar-sign">
+            <img src="Photos/Group 201.png" />
+          </div>
+          <div class="links">
+            <p>Only 2 Operators</p>
+            <p>Notifications</p>
+            <p>Landing Pages</p>
+          </div>
+        
+          <div class="order-now-button">
+            <button class = "button-text">
+              Order Now
+            </button>
+          </div>
+        </div>
+
+        <div id = "single-card-green" class = "little-card">
+          <h2 class = "free-look1">Standard</h2>
+          <p id = "second-card">Brief price description</p>
+          <div id = "dollar-sign">
+            <img src="Photos/Group 201 (2).png" />
+          </div>
+          <div id = "links">
+            <p>5+ Operators</p>
+            <p>Notifications</p>
+            <p>Landing Pages</p>
+          </div>
+        
+          <div class = "order-now-button1">
+            <button class = "button-text1">
+              Order Now
+            </button>
+          </div>
+        </div>
+
+        <div class="single-card little-card"">
+          <h2 class="free-look">Premium</h2>
+          <p class = "forma">Brief price description</p>
+          <div class="dollar-sign">
+            <img src="Photos/Group 201 (1).png" />
+          </div>
+          <div class="links">
+            <p>Only 3 Operators</p>
+            <p>Notifications</p>
+            <p>Landing Pages</p>
+          </div>
+        
+          <div class="order-now-button">
+            <button class = "button-text">
+              Order Now
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+<br /> <br />
+
+    <section class = "green-container">
+      <div class = "row">
+        <div class = "content-left-col">
+          <div>
+            <h2 class = "txt">Join 100 Compannies who boost their business with Product</h2>
+          </div>
+          <div class = "order-now-button1">
+            <button class = "button-text1" style = "color: #22343D;">Get This</button>
+          </div>
+        </div>
+
+        <div class = "content-right-col">
+          <img class = "image" src = "Photos/screen.png" />
+        </div>
+      </div>
+    </section>
+    <br /> <br />
+
+    <div class="item" style = "background-color: blueviolet;">
+      <p class="footer-text">© 2025 My Website. All rights reserved.</p>
+    </div>
+  </body>
 </html>

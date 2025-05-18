@@ -1,0 +1,371 @@
+* {
+  font-family: Poppins, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.nav {
+  justify-content: center;
+  align-items: baseline;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row-centered {
+  align-items: center;
+}
+
+.content-container {
+  justify-content: center;
+  padding: 0 20px;
+  margin: auto;
+  max-width: 1120px;
+}
+
+.nav-bar-wrapper {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav-bar-buttons-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.app-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+}
+
+.app-title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 28px;
+  color: #173a56;
+}
+
+.nav-links-container {
+  display: flex;
+}
+
+.nav-links-container > a {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0 20px;
+}
+
+.primary-button {
+  font-size: 16px;
+  line-height: 28px;
+  height: 43px;
+  border-radius: 4px;
+  background: #02897a;
+  padding: 0 25px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  white-space: pre;
+}
+
+.button-outlined {
+  background-color: #ffffff;
+  color: #173a56;
+  border: 1px solid #bcd0e5;
+}
+
+.button-nav {
+  margin: 0 12px;
+}
+
+.switch-theme-button {
+  width: 32;
+  height: 32;
+  border-radius: 50%;
+  background-color: #f3f3f3;
+  border: none;
+  cursor: pointer;
+}
+
+#switch-theme-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.content-left-col .content-right-col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main-header {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  width: 512px;
+  /*height: 120px;*/
+  color: #22343d;
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 28px;
+  color: #22343d;
+}
+
+.button-link {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  text-decoration: underline;
+  color: #02897a;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: pre;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.first-section-right-col {
+  width: 100%;
+  margin: auto;
+}
+
+#play-icon {
+  height: 17px;
+  margin-right: 9px;
+}
+
+#menu-icon {
+  width: 28px;
+  height: 31px;
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: none;
+}
+
+#menu-collapse {
+  display: none;
+}
+
+.section-bg {
+  background-image: url("./Photos/Bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.section-3-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+}
+
+.section-3-row > h2 {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  line-height: 100%;
+}
+
+/*.section-3-row > p{
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+letter-spacing: 0px;
+}*/
+
+.section-row-4-cols {
+  display: grid;
+  grid-template-areas: "grid-col-1 grid-col-2 grid-col-3 grid-col-4";
+}
+
+.section-row-4-cols-item-1 {
+  grid-area: grid-col-1;
+}
+
+.section-row-4-cols-item-2 {
+  grid-area: grid-col-2;
+}
+
+.section-row-4-cols-item-3 {
+  grid-area: grid-col-3;
+}
+
+.section-row-4-cols-item-4 {
+  grid-area: grid-col-4;
+}
+
+.section-2-icon {
+  width: 51;
+  height: 50;
+}
+
+.section-row-4-cols h5 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 100%;
+}
+
+.section-row-4-cols p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.section-row-4-cols div {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 850px) {
+  .section-row-4-cols {
+    grid-template-areas:
+      "grid-col-1 grid-col-2"
+      "grid-col-3 grid-col-4";
+    gap: 30px;
+  }
+  .section-row-4-cols > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+}
+
+.section-2-col-item {
+  padding: 10px;
+}
+
+.section-2-col-item > h6 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  margin: 30px 0 10px 0;
+}
+
+.section-2-col-item > h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  margin: 0;
+}
+
+.check-box-icon{
+  width: 35;
+height: 35;
+margin-right: 30px;
+}
+
+.section-2-col-item > p {
+  margin-bottom: 23px;
+}
+
+@media screen and (max-width: 950px) {
+  .menu-icon {
+    display: flex;
+  }
+
+  .nav-bar-wrapper > .nav-bar-buttons-container {
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    overflow-y: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-bar-buttons-container > .nav-links-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5px 0px;
+  }
+
+  .nav-bar-buttons-container > .nav-links-container > a:hover {
+    text-decoration: underline;
+  }
+  .nav-bar-buttons-container > .action-buttons-wrapper {
+    padding: 10px 0;
+    flex-direction: column;
+  }
+  .nav-bar-buttons-container > .action-buttons-wrapper > button {
+    margin: 5px 0;
+  }
+  .nav
+    > #menu-collapse:not(:checked)
+    ~ .nav-bar-wrapper
+    > .nav-bar-buttons-container {
+    height: 0;
+  }
+
+  .nav
+    > #menu-collapse:checked
+    ~ .nav-bar-wrapper
+    > .nav-bar-buttons-container {
+    max-height: 100vh;
+    height: auto;
+    padding: 20px 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section-2-col {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .section-non-reverse{
+    flex-direction: column;
+  }
+  
+  .section-2-col-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+  .section-row-4-cols {
+    grid-template-areas:
+      "grid-col-1"
+      "grid-col-2"
+      "grid-col-3"
+      "grid-col-4";
+    gap: 0;
+    margin: 0;
+  }
+  .section-row-4-cols > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+}
