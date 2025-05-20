@@ -50,11 +50,11 @@ function days(day) {
   }
 }
 
-console.log(days(1));
-console.log(days(2));
-console.log(days(3));
-console.log(days(4));
-console.log(days(5));
-console.log(days(6));
-console.log(days(7));
-console.log(days(8));
+days(1);
+days(2);
+days(3);
+days(4);
+days(5);
+days(6);
+days(7);
+days(8);
