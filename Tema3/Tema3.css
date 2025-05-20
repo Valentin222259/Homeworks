@@ -387,13 +387,13 @@ button {
   align-items: baseline;
 }
 
-/* Ascunde meniul sub 950px dacă nu este bifat */
+
 @media screen and (max-width: 950px) {
   .menu-icon {
     display: block;
   }
 
-  /* Ascunde inițial butoanele */
+  
   .nav
     > #menu-collapse:not(:checked)
     ~ .nav-bar-wrapper
@@ -401,7 +401,7 @@ button {
     display: none;
   }
 
-  /* Afișează butoanele când e bifat checkbox-ul */
+  
   .nav > #menu-collapse:checked ~ .nav-bar-wrapper .nav-bar-buttons-container {
     display: flex;
     flex-direction: column;
