@@ -1,0 +1,39 @@
+body {
+    min-height: 500px;
+    background-color: #45badd;
+}
+
+.container {
+    background-image: url("./images/robot.gif");
+    background-repeat: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    background-position: bottom;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    min-height: 500px;
+}
+
+button {
+    cursor: pointer;
+    background: #ff3282;
+    width: 200px;
+    border: none;
+    color: white;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+.speech{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 30px;
+    font-size: 18px;
+    margin: 50px 0;
+    border-radius: 10px;
+}
